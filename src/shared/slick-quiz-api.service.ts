@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 
-import 'rxjs';
-import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+//import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class EliteApi {
@@ -11,12 +11,18 @@ export class EliteApi {
 
     constructor(private http: Http) { }
 
-    getTournaments(){
+    // getTournaments(){
+    //     console.log("fetching data ..........");
+    //     return new Promise(resolve => {
+    //         this.http.get(`${this.baseUrl}/posts`)
+    //             .subscribe(res => resolve(res.json()));
+    //     });
+    // }
+
+        getTournaments(){
         console.log("fetching data ..........");
-        return new Promise(resolve => {
-            this.http.get(`${this.baseUrl}/posts`)
-                .subscribe(res => resolve(res.json()));
-        });
+        return this.http.get(`${this.baseUrl}/posts`)
+                .map(res=>res.json())
     }
 
     // getTournamentData(tourneyId) : Observable<any> {

@@ -7,7 +7,27 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<!-- <ion-content>
+    <ion-card *ngFor="let item of eliteArray">
+        <h2>{{item.title}}, {{item.id}}</h2>
+    </ion-card>
+</ion-content> -->
+
+<ion-card *ngFor="let item of eliteArray">
+    <!-- <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/> -->
+    <ion-card-content >
+      <ion-card-title>
+          {{item.title}}
+        </ion-card-title>
+      <p>
+          {{item.body}}, {{item.id}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+
+
+<!-- <ion-content padding>
   <h3>Ionic Menu Starter</h3>
 
   <p>
@@ -15,4 +35,4 @@
   </p>
 
   <button ion-button secondary menuToggle>Toggle Menu</button>
-</ion-content>
+</ion-content> -->
