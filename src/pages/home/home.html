@@ -15,7 +15,7 @@
 
 <ion-card *ngFor="let item of eliteArray">
     <!-- <img src="https://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png"/> -->
-    <ion-card-content >
+    <ion-card-content (click)="goTo(item)">
       <ion-card-title>
           {{item.title}}
         </ion-card-title>
