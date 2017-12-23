@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import {ModelObject} from '../../model/model';
+import { SocialSharing } from '@ionic-native/social-sharing';
 
 /**
  * Generated class for the AboutPage page.
@@ -15,9 +16,18 @@ import {ModelObject} from '../../model/model';
 })
 export class AboutPage {
   item: ModelObject;  
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.item = navParams.get('item');   
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    private socialSharing: SocialSharing) {
+    this.item = navParams.get('data');   
     console.log("AboutPage: "+ this.item); 
+  }
+
+  whatsappShare() {
+    this.socialSharing.shareViaWhatsApp("shareViaWhatsApp", "https://picsum.photos/200/100", "https://iwishu.in").then(() => {
+      console.log("shareViaWhatsApp: Success");
+    }).catch(() => {
+      console.error("shareViaWhatsApp: failed");
+    });
   }
 
   ionViewDidLoad() {
