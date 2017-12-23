@@ -14,7 +14,7 @@
   
   
   <ion-content padding>
-      <ion-card (click)="whatsappShare()">
+      <ion-card>
           <img src="https://picsum.photos/200/100"/>
         <ion-card-header>
           {{item.title}}
@@ -24,6 +24,15 @@
             {{item.body}}, {{item.id}}
           </p>
         </ion-card-content>
+        <ion-fab right bottom>
+          <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+          <ion-fab-list side="left">
+            <button ion-fab (click)="shareViaFacebook()"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button ion-fab (click)="shareViaTwitter()"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button ion-fab (click)="shareViaWhatsApp()"><ion-icon name="logo-vimeo"></ion-icon></button>
+            <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+          </ion-fab-list>
+  </ion-fab>
       </ion-card>
   </ion-content>
   

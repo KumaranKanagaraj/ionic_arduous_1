@@ -22,11 +22,27 @@ export class AboutPage {
     console.log("AboutPage: "+ this.item); 
   }
 
-  whatsappShare() {
+  shareViaWhatsApp() {
     this.socialSharing.shareViaWhatsApp("happy christmas day dude", "http://iwishu.in/public/img/xmass.jpg", "https://iwishu.in").then(() => {
       console.log("shareViaWhatsApp: Success");
     }).catch(() => {
       console.error("shareViaWhatsApp: failed");
+    });
+  }
+
+  shareViaFacebook() {
+    this.socialSharing.shareViaFacebook("happy christmas day dude", "http://iwishu.in/public/img/xmass.jpg", "https://iwishu.in").then(() => {
+      console.log("shareViaFacebook: Success");
+    }).catch(() => {
+      console.error("shareViaFacebook: failed");
+    });
+  }
+
+  shareViaTwitter() {
+    this.socialSharing.shareViaTwitter("happy christmas day dude", "http://iwishu.in/public/img/xmass.jpg", "https://iwishu.in").then(() => {
+      console.log("shareViaTwitter: Success");
+    }).catch(() => {
+      console.error("shareViaTwitter: failed");
     });
   }
 
