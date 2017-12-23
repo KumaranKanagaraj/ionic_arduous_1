@@ -23,7 +23,7 @@ export class AboutPage {
   }
 
   whatsappShare() {
-    this.socialSharing.shareViaWhatsApp("shareViaWhatsApp", "https://picsum.photos/200/100", "https://iwishu.in").then(() => {
+    this.socialSharing.shareViaWhatsApp("happy christmas day dude", null, "https://iwishu.in").then(() => {
       console.log("shareViaWhatsApp: Success");
     }).catch(() => {
       console.error("shareViaWhatsApp: failed");
