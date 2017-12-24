@@ -6,7 +6,7 @@ import {EliteApi} from "../shared/shared"
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { AboutPage } from '../pages/about/about';
+// import { AboutPage } from '../pages/about/about';
 import { SlidedemoPage } from '../pages/slidedemo/slidedemo';
 
 @Component({

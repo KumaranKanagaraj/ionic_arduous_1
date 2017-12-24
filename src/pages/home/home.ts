@@ -3,7 +3,6 @@ import { NavController } from 'ionic-angular';
 import { EliteApi } from '../../shared/shared';
 import {ModelObject} from '../../model/model';
 import { AboutPage } from '../about/about';
-import { SlidedemoPage } from '../slidedemo/slidedemo';
 import * as $ from 'jquery'
 
 
