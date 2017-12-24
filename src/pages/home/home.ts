@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { EliteApi } from '../../shared/shared';
 import {ModelObject} from '../../model/model';
 import { AboutPage } from '../about/about';
+import { SlidedemoPage } from '../slidedemo/slidedemo';
 
 @Component({
   selector: 'page-home',
@@ -47,6 +48,15 @@ export class HomePage {
       data: item
     });
   }
+
+  //   goTo(item) {
+  //   console.log(item);
+  //   this.navCtrl.push(SlidedemoPage, {
+  //     data: item
+  //   });
+  // }
+
+  
 
 
 

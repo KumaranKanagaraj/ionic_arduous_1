@@ -1,0 +1,99 @@
+<!--
+  Generated template for the SlidedemoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>slidedemo</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content> -->
+
+<!-- <ion-navbar *navbar>
+  <ion-title>Tab 1</ion-title>
+  <ion-buttons>
+    <button (click)="next(slides, 2)">next</button>
+  </ion-buttons>
+</ion-navbar> -->
+ 
+<ion-content padding class="page1">
+  <!-- <ion-slides (ionSlideDidChange)="slideChanged()"> -->
+  <!-- <ion-slides [options]="options" #slides>           -->
+  <ion-slides>
+    <ion-slide>
+      <h2>Question 1</h2>
+      <!-- <img src="http://cache.marriott.com/propertyimages/p/phldt/phototour/phldt_phototour68.jpg?Log=1" alt=""> -->
+      <ion-list>        
+           <ion-item>
+             <ion-label>Option 1</ion-label>
+             <ion-checkbox (ionChange)="updateSlide1()"></ion-checkbox>
+           </ion-item>
+           <ion-item>
+            <ion-label>Option 2</ion-label>
+            <ion-checkbox (ionChange)="updateSlide1()"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label>Option 3</ion-label>
+            <ion-checkbox (ionChange)="updateSlide1()"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label>Option 4</ion-label>
+            <ion-checkbox (ionChange)="updateSlide1()"></ion-checkbox>
+          </ion-item>        
+         </ion-list>
+    </ion-slide>
+    <ion-slide>
+        <h2>Question 2</h2>
+      <!-- <img src="https://newevolutiondesigns.com/images/freebies/philadelphia-downtown.jpg" alt=""> -->
+      <ion-list>        
+        <ion-item>
+          <ion-label>Option 1</ion-label>
+          <ion-checkbox [(ngModel)]="option1" (ionChange)="updateSlide2()"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+         <ion-label>Option 2</ion-label>
+         <ion-checkbox [(ngModel)]="option2" (ionChange)="updateSlide2()"></ion-checkbox>
+       </ion-item>
+       <ion-item>
+         <ion-label>Option 3</ion-label>
+         <ion-checkbox [(ngModel)]="option3" (ionChange)="updateSlide2()"></ion-checkbox>
+       </ion-item>
+       <ion-item>
+         <ion-label>Option 4</ion-label>
+         <ion-checkbox [(ngModel)]="option4" (ionChange)="updateSlide2()"></ion-checkbox>
+       </ion-item>       
+      </ion-list>
+    </ion-slide>
+    <ion-slide>
+        <h2>Question 3</h2>
+      <!-- <img src="http://www.sailtraining.org/events/conference/images/SheratonPhiladelphiaSocietyHillHotelLobby.jpg" alt=""> -->
+      <ion-list>        
+        <ion-item>
+          <ion-label>Option 1</ion-label>
+          <ion-checkbox [(ngModel)]="option1" (ionChange)="updateSlide3()"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+         <ion-label>Option 2</ion-label>
+         <ion-checkbox [(ngModel)]="option2" (ionChange)="updateSlide3()"></ion-checkbox>
+       </ion-item>
+       <ion-item>
+         <ion-label>Option 3</ion-label>
+         <ion-checkbox [(ngModel)]="option3" (ionChange)="updateSlide3()"></ion-checkbox>
+       </ion-item>
+       <ion-item>
+         <ion-label>Option 4</ion-label>
+         <ion-checkbox [(ngModel)]="option4" (ionChange)="updateSlide3()"></ion-checkbox>
+       </ion-item>    
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
+ 
+</ion-content>
