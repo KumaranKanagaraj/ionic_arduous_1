@@ -35,29 +35,33 @@ export class SlidedemoPage {
 updateSlide1() {
   debugger;
   console.log('option1 new state:' + this.option1);
-  if(this.option1){
-    this.goToSlide();
-  }
+  this.goToSlide(1)
+  // if(this.option1){
+  //   this.goToSlide();
+  // }
 }
 
 updateSlide2() {
   debugger;
   console.log('option2 new state:' + this.option2);
-  if(this.option2){
-    this.goToSlide();
-  }
+  this.goToSlide(2)
+  // if(this.option2){
+  //   this.goToSlide();
+  // }
 }
 
 updateSlide3() {
   debugger;
   console.log('option3 new state:' + this.option3);
-  if(this.option3){
-    this.goToSlide();
-  }
+  this.goToSlide(3)
+  // if(this.option3){
+  //   this.goToSlide();
+  // }
 }
 
-  goToSlide() {
-		this.slides.slideTo(3, 500);
+  goToSlide(slideNumber) {
+    debugger;
+		this.slides.slideTo(slideNumber, 500);
 	}
 
   next(slide, index) {

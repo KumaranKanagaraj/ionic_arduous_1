@@ -27,7 +27,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'About', component: AboutPage },
+      // { title: 'About', component: AboutPage },
       { title: 'Slick Quiz', component: SlidedemoPage }
     ];
 

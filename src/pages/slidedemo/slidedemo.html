@@ -56,19 +56,19 @@
       <ion-list>        
         <ion-item>
           <ion-label>Option 1</ion-label>
-          <ion-checkbox [(ngModel)]="option1" (ionChange)="updateSlide2()"></ion-checkbox>
+          <ion-checkbox (ionChange)="updateSlide2()"></ion-checkbox>
         </ion-item>
         <ion-item>
          <ion-label>Option 2</ion-label>
-         <ion-checkbox [(ngModel)]="option2" (ionChange)="updateSlide2()"></ion-checkbox>
+         <ion-checkbox (ionChange)="updateSlide2()"></ion-checkbox>
        </ion-item>
        <ion-item>
          <ion-label>Option 3</ion-label>
-         <ion-checkbox [(ngModel)]="option3" (ionChange)="updateSlide2()"></ion-checkbox>
+         <ion-checkbox (ionChange)="updateSlide2()"></ion-checkbox>
        </ion-item>
        <ion-item>
          <ion-label>Option 4</ion-label>
-         <ion-checkbox [(ngModel)]="option4" (ionChange)="updateSlide2()"></ion-checkbox>
+         <ion-checkbox (ionChange)="updateSlide2()"></ion-checkbox>
        </ion-item>       
       </ion-list>
     </ion-slide>
@@ -78,22 +78,24 @@
       <ion-list>        
         <ion-item>
           <ion-label>Option 1</ion-label>
-          <ion-checkbox [(ngModel)]="option1" (ionChange)="updateSlide3()"></ion-checkbox>
+          <ion-checkbox (ionChange)="updateSlide3()"></ion-checkbox>
         </ion-item>
         <ion-item>
          <ion-label>Option 2</ion-label>
-         <ion-checkbox [(ngModel)]="option2" (ionChange)="updateSlide3()"></ion-checkbox>
+         <ion-checkbox (ionChange)="updateSlide3()"></ion-checkbox>
        </ion-item>
        <ion-item>
          <ion-label>Option 3</ion-label>
-         <ion-checkbox [(ngModel)]="option3" (ionChange)="updateSlide3()"></ion-checkbox>
+         <ion-checkbox (ionChange)="updateSlide3()"></ion-checkbox>
        </ion-item>
        <ion-item>
          <ion-label>Option 4</ion-label>
-         <ion-checkbox [(ngModel)]="option4" (ionChange)="updateSlide3()"></ion-checkbox>
+         <ion-checkbox (ionChange)="updateSlide3()"></ion-checkbox>
        </ion-item>    
       </ion-list>
     </ion-slide>
+    <ion-slide>
+        <h2>Final Answer</h2>
+    </ion-slide>
   </ion-slides>
- 
 </ion-content>
