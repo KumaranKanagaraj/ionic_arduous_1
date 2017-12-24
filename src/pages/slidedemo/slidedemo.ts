@@ -33,7 +33,6 @@ export class SlidedemoPage {
 // 	}
 
 updateSlide1() {
-  debugger;
   console.log('option1 new state:' + this.option1);
   this.goToSlide(1)
   // if(this.option1){
@@ -42,7 +41,6 @@ updateSlide1() {
 }
 
 updateSlide2() {
-  debugger;
   console.log('option2 new state:' + this.option2);
   this.goToSlide(2)
   // if(this.option2){
@@ -51,7 +49,6 @@ updateSlide2() {
 }
 
 updateSlide3() {
-  debugger;
   console.log('option3 new state:' + this.option3);
   this.goToSlide(3)
   // if(this.option3){
@@ -60,7 +57,6 @@ updateSlide3() {
 }
 
   goToSlide(slideNumber) {
-    debugger;
 		this.slides.slideTo(slideNumber, 500);
 	}
 

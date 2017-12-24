@@ -4,6 +4,8 @@ import { EliteApi } from '../../shared/shared';
 import {ModelObject} from '../../model/model';
 import { AboutPage } from '../about/about';
 import { SlidedemoPage } from '../slidedemo/slidedemo';
+import * as $ from 'jquery'
+
 
 @Component({
   selector: 'page-home',
@@ -26,12 +28,11 @@ export class HomePage {
           this.perPageElite.push( this.eliteArray[i] );
         }
     });
-    //   debugger;
   }
   
   doInfinite(infiniteScroll) {
     console.log('Begin async operation');
-    
+    console.log("lenth: "+ $(".card-header-md").length);
     setTimeout(() => {
     for (let i = 0; i < 30; i++) {
       this.perPageElite.push( this.eliteArray[i] );
