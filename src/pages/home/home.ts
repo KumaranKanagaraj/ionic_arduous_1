@@ -17,6 +17,7 @@ export class HomePage {
 
   constructor(private eliteApi: EliteApi,public navCtrl: NavController) {
     console.log("call service...")
+    this.getSlickQuiz();
     //this.eliteApi.getTournaments().then(data => { this.eliteArray = data });
     this.eliteApi.getTournaments().subscribe(data => {
         this.eliteArray = data;
@@ -28,6 +29,19 @@ export class HomePage {
         }
     });
   }
+
+  getSlickQuiz() {
+    debugger;
+        this.eliteApi.fetchJson().then(data => {
+          console.log(data);
+          debugger;
+          // data=data.hits.hits;
+          //this.items.push(data);
+          // this.SearchItems.push(data);
+        })
+        .catch(error => { console.log(error) });
+  
+       }
   
   doInfinite(infiniteScroll) {
     console.log('Begin async operation');
