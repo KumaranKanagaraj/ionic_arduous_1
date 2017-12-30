@@ -28,6 +28,12 @@ export class EliteApi {
                 .map(res=>res.json())
     }
 
+    testJson(){
+        console.log("fetching data ..........");
+        return this.http.get(this.corsUrl+"/"+"https://thinkbyfun.com/now/js/test.json")
+                .map(res=>res.json())
+    }
+
     fetchJson(): any {
         console.log(this.kayamaiuRL);
         let headers = new Headers();
